@@ -3,30 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="login.css"/>
     <title>타자 연습 사이트</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        button {
-            padding: 20px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
 </head>
 <body>
-    <button onclick="showAlert()">클릭하세요</button>
+    <div class = "login-wrapper">
+        <h2>Login</h2>
+        <form method="post" action="서버의ur1" id ="login-form">
+        <input id="id" type="text" name = "userName" placeholder="Email">
+        <input id="pw" type="text" name="userPassward" placeholder="Passward">
+        <label for="remember-check">
+            <input type ="checkbox" id = "remember-check">아이디 저장하기
+        </label>
+        <input type="submit" value="Login"A>
+    </form>
+    </div>
 
-    <script>
-        function showAlert() {
-            alert('버튼이 클릭되었습니다!');
-        }
-    </script>
 </body>
 </html>
